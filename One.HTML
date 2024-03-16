@@ -1,0 +1,49 @@
+ <button onclick = "update()">Add</button>
+<div id = "result">     
+</div>
+
+<script>
+    //select h1
+    var div = document.getElementById("result")
+    function update()
+    {
+        //create a new element
+        var longword = document.createElement("h1")
+        longword.textContent="Hello"
+        div.append(longword)
+    }
+</script>
+
+
+
+
+ <button id="button" onclick="update()">Change color</button>
+
+<script>
+    // Select button
+    var button = document.getElementById("button");
+
+    function update() {
+        button.style.backgroundColor = "blue";
+    }
+</script> 
+
+
+
+ <h1 id="result">Name</h1>
+<button onclick="update(event)">Latha</button>
+<button onclick="update(event)">Vatsan</button>
+<button onclick="update(event)">Srikanth</button>
+
+<script>
+    // Select h1
+    var h1 = document.getElementById("result");
+
+    function update(event) {
+        h1.textContent = event.target.textContent;
+    }
+</script> 
+
+
+
+
